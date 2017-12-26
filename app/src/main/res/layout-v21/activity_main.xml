@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Material.Light.DarkActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal">
+
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apk"
+            android:id="@+id/radioButton"
+            android:layout_gravity="left|bottom"
+            android:checked="false"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/textView" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Link"
+            android:id="@+id/radioButton2"
+            android:layout_gravity="center_horizontal|bottom"
+            android:checked="false"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Selct Apps To Transfer"
+            android:id="@+id/textView"
+            android:layout_gravity="left|top"
+            android:layout_above="@+id/radioButton"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:id="@+id/button"
+            android:layout_gravity="right|top"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textView" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </ListView>
+
+</LinearLayout>
